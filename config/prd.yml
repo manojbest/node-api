@@ -1,0 +1,9 @@
+server:
+  ipAddr: 127.0.0.1
+  port: 8091
+  ssl: false
+
+logger:
+  path: ./
+  level: warn
+  period: 1d

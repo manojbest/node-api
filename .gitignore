@@ -1,0 +1,6 @@
+node_modules
+coverage
+.idea
+package-lock.json
+node-api.iml
+node-api.log*

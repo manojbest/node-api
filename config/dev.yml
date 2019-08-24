@@ -1,0 +1,10 @@
+server:
+  ipAddr: 127.0.0.1
+  port: 8076
+  ssl: false
+
+logger:
+  path: ./
+  level: info
+  period: 1d
+

@@ -1,0 +1,8 @@
+info:
+  app:
+    name: node-api
+
+server:
+  cluster:
+      enable: false
+
