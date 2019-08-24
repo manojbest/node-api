@@ -14,14 +14,12 @@ import {Logger} from "./util/logger";
 export class NodeApi {
 
     public run() {
-
         Logger.getLogger().info(`Server Started at ${Config.get("server.port")}`);
-
     }
 }
 
 /**
- * Catch Server Shutdown event and stop eureka client
+ * Catch Server Shutdown event
  */
 process.on("SIGINT", async () => {
     Logger.getLogger().info("Shutting down ...");

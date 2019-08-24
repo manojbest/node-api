@@ -15,14 +15,14 @@ export class SwaggerConfiguration implements BaseConfiguration {
         app.use(swagger.express({
             definition: {
                 info: {
-                    title: "socket-composite",
+                    title: "node-api",
                     version: "1.0.0",
                 },
                 securityDefinitions: {
                     apiKeyHeader: {
                         type: SwaggerDefinitionConstant.Security.Type.API_KEY,
                         in: SwaggerDefinitionConstant.Security.In.HEADER,
-                        name: "x-authorization",
+                        name: "authorization",
                     },
                 },
             },
