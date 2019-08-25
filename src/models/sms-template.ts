@@ -5,7 +5,7 @@ import Lottery from "./lottery";
     charset: "utf8mb4",
     collate: "utf8mb4_unicode_ci",
 })
-export default class SmsTemplate extends Model<SmsTemplate> {
+export default class SmsTemplate extends Model {
     @Column({type: DataType.STRING(200), allowNull: true})
     public name: string;
 

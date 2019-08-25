@@ -4,7 +4,7 @@ import LotteryField from "./lottery-field";
 import SmsTemplate from "./sms-template";
 
 @Table
-export default class Lottery extends Model<Lottery> {
+export default class Lottery extends Model {
     @Column({type: DataType.STRING(200), allowNull: false})
     public name: string;
 

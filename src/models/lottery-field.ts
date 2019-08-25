@@ -2,7 +2,7 @@ import {BelongsTo, Column, DataType, ForeignKey, Model, Table} from "sequelize-t
 import Lottery from "./lottery";
 
 @Table
-export default class LotteryField extends Model<LotteryField> {
+export default class LotteryField extends Model {
     @Column({type: DataType.STRING(200), allowNull: false})
     public name: string;
 

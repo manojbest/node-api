@@ -3,7 +3,7 @@ import Permission from "./permission";
 import User from "./user";
 
 @Table
-export default class UserPermission extends Model<UserPermission> {
+export default class UserPermission extends Model {
     @ForeignKey(() => User)
     @Column
     public userId: number;

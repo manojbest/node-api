@@ -1,7 +1,13 @@
 import * as Config from "config";
 import {Application} from "express";
-import * as path from "path";
 import {Sequelize} from "sequelize-typescript";
+import Draw from "../models/draw";
+import Lottery from "../models/lottery";
+import LotteryField from "../models/lottery-field";
+import Permission from "../models/permission";
+import SmsTemplate from "../models/sms-template";
+import User from "../models/user";
+import UserPermission from "../models/user-permission";
 import {Configuration} from "../support/decorator/custom-decorator";
 import {Logger} from "../util/logger";
 import {BaseConfiguration} from "./base-configuration";
@@ -15,7 +21,15 @@ export class SequelizeConfiguration implements BaseConfiguration {
             username: Config.get("db.username"),
             password: Config.get("db.password"),
             port: Config.get("db.port"),
-            models: [path.resolve(__dirname, "../models")],
+            models: [
+                Draw,
+                Lottery,
+                LotteryField,
+                Permission,
+                SmsTemplate,
+                User,
+                UserPermission,
+            ],
         });
         Logger.getLogger().info("Sequelize Configurations completed...");
     }

@@ -3,7 +3,7 @@ import Permission from "./permission";
 import UserPermission from "./user-permission";
 
 @Table
-export default class User extends Model<User> {
+export default class User extends Model {
     @Column({
         type: DataType.STRING,
         allowNull: false,
