@@ -32,12 +32,12 @@ export class AuthenticationInterceptor extends AbstractInterceptor {
     public async handler(req: express.Request, res: express.Response, next: express.NextFunction) {
         // Get x-authorization header or empty string if its not available
         let authToken: string | string[] = "";
-        if (!isEmpty(req.headers["authorization"])) {
-            authToken = req.headers["authorization"];
+        if (!isEmpty(req.headers.authorization)) {
+            authToken = req.headers.authorization;
         }
 
         try {
-            //validate auth token
+            // validate auth token
             next();
         } catch (e) {
             Logger.getLogger().error("Authentication Error", e);

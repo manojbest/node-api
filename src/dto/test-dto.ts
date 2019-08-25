@@ -1,4 +1,4 @@
-
+/* tslint:disable:variable-name */
 export class TestDetails {
 
     private _name: string;

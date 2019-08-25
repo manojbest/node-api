@@ -8,7 +8,8 @@
     "start-env-prod": "ts-node src/node-api --NODE_ENV=prd",
     "start:dev": "ts-node-dev --respawn src/node-api --NODE_ENV=dev",
     "start:debug": "nodemon --config nodemon-debug.json --NODE_ENV=dev",
-    "test": "jest --colors --NODE_ENV=dev"
+    "test": "jest --colors --NODE_ENV=dev",
+    "lint": "tslint --fix 'src/**/*.ts'"
   },
   "author": "Manoj Bandara",
   "license": "MIT",
