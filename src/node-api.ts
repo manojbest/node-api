@@ -1,4 +1,3 @@
-
 import * as Config from "config";
 import "reflect-metadata";
 import "./aop/logging/logging-aspect";

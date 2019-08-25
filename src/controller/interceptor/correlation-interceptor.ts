@@ -1,4 +1,3 @@
-
 import * as Correlations from "correlation-id";
 import * as express from "express";
 import {postConstruct} from "inversify";

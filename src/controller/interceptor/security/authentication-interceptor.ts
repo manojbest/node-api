@@ -1,4 +1,3 @@
-
 import * as express from "express";
 import {postConstruct} from "inversify";
 import {isEmpty} from "lodash";

@@ -1,5 +1,3 @@
-
-
 import {CustomError} from "ts-custom-error";
 
 export abstract class AbstractProblem extends CustomError {

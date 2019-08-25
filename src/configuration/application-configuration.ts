@@ -1,4 +1,3 @@
-
 import * as BodyParser from "body-parser";
 import * as Compression from "compression";
 import {Application} from "express";

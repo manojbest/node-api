@@ -1,5 +1,3 @@
-
-
 import * as Cluster from "cluster";
 import * as Config from "config";
 import * as Glob from "glob";
