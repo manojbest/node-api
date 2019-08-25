@@ -1,4 +1,3 @@
-
 const APPLICATION_POINTCUT = {
     methodNamePattern: /.*/,
     classNamePattern: /.*/,

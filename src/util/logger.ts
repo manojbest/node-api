@@ -1,5 +1,3 @@
-
-
 import * as Bunyan from "bunyan";
 import * as Config from "config";
 

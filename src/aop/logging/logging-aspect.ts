@@ -11,14 +11,14 @@ class LoggingAspect {
     @beforeMethod(APPLICATION_POINTCUT)
     public logBeforeMethod(metadata: Metadata): void {
         executionTime().start(metadata.method.name);
-        Logger.getLogger().info(`Enter ${metadata.className}.${metadata.method.name} argument[s] = `+
+        Logger.getLogger().info(`Enter ${metadata.className}.${metadata.method.name} argument[s] = ` +
             `${CircularJSON.stringify(metadata.method.args)}`);
     }
 
     @afterMethod(APPLICATION_POINTCUT)
     public logAfterMethod(metadata: Metadata): void {
         const result = executionTime().stop(metadata.method.name);
-        Logger.getLogger().info(`Exit ${metadata.className}.${metadata.method.name} with result = `+
+        Logger.getLogger().info(`Exit ${metadata.className}.${metadata.method.name} with result = ` +
             `${CircularJSON.stringify(metadata.method.result)}  execution time = ${result.time}`);
     }
 

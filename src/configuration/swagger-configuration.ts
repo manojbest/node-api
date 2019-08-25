@@ -1,5 +1,3 @@
-
-
 import * as express from "express";
 import {Application} from "express";
 import * as swagger from "swagger-express-ts";

@@ -1,5 +1,3 @@
-
-
 import {AbstractProblem} from "./abstract-problem";
 
 export class ValidationProblem extends AbstractProblem {

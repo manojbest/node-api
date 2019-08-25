@@ -1,5 +1,3 @@
-
-
 export const TYPES = {
     Configuration: Symbol.for("Configuration"),
     Interceptor: Symbol.for("Interceptor"),
