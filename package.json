@@ -10,8 +10,8 @@
     "start:debug": "nodemon --config nodemon-debug.json --NODE_ENV=dev",
     "test": "jest --colors --NODE_ENV=dev",
     "lint": "tslint --fix 'src/**/*.ts'",
-    "db:migrate-all": "sequelize-cli db:migrate",
-    "db:seed-all": "sequelize-cli db:seed:all"
+    "db:migrate-all": "sequelize db:migrate",
+    "db:seed-all": "sequelize db:seed:all"
   },
   "author": "Manoj Bandara",
   "license": "MIT",

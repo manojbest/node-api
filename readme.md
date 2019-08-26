@@ -1,4 +1,8 @@
-# Node API
+# Lucky-one-API
+
+#### start docker container
+`docker-compose up --build`
+- this will start `MySql` server
 
 #### create migrations
 `npx sequelize-cli migration:generate --name create-< name of the table >`
