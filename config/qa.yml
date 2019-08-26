@@ -9,9 +9,9 @@ logger:
   period: 1d
 
 db:
-  database: lucky1
+  database: lucky
   host: 127.0.0.1
   dialect: mysql
   port: 3306
-  username: root
-  password: ''
+  username: admin
+  password: admin@123
