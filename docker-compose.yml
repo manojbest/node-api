@@ -1,0 +1,17 @@
+version: "3"
+services:
+  db:
+    image: mysql
+    environment:
+      MYSQL_DATABASE: "lucky"
+      MYSQL_ROOT_PASSWORD: "admin@123"
+      MYSQL_USER: "admin"
+      MYSQL_PASSWORD: "admin@123"
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    volumes:
+      - luckydb:/var/lib/mysql
+    ports: 
+      - "3306:3306"
+volumes:
+  luckydb:

@@ -1,5 +1,3 @@
-
-
 import {BaseHttpController, httpGet} from "inversify-express-utils";
 import {RestController} from "../../support/decorator/custom-decorator";
 

@@ -2,5 +2,6 @@ node_modules
 coverage
 .idea
 package-lock.json
+yarn.lock
 node-api.iml
 node-api.log*

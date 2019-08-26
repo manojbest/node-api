@@ -1,4 +1,3 @@
-
 import * as cors from "cors";
 import {Application} from "express";
 import {Configuration} from "../support/decorator/custom-decorator";

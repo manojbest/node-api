@@ -1,5 +1,3 @@
-
-
 import {Application} from "express";
 
 export interface BaseConfiguration {
